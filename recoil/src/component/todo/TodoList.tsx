@@ -1,8 +1,6 @@
 import {useRecoilValue} from "recoil";
-import {todoListFilterState, todoListState} from "../../atom/Atoms";
 import TodoItemCreator from "./TodoItemCreator";
 import TodoItem from "./TodoItem";
-import {useEffect} from "react";
 import TodoListFilters from "./TodoListFilters";
 import {filteredTodoListState} from "../../selector/Selector";
 import TodoListStats from "./TodoListStats";

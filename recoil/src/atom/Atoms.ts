@@ -19,3 +19,8 @@ export const todoListFilterState = atom({
     default : "Show All"
 })
 
+
+export const numState = atom<number>({
+    key : "numState",
+    default : 10
+})
