@@ -1,4 +1,4 @@
-import {atom, selector} from "recoil";
+import {atom, selector, selectorFamily} from "recoil";
 import axios from "axios";
 
 export const currentUserIdState = atom({
@@ -13,6 +13,17 @@ export const currentUserQuery = selector({
             await axios.get(
                 `https://jsonplaceholder.typicode.com/users/${get(currentUserIdState)}`)
         // const response = await axios.get(`https://jsonplaceholder.typicode.com/users/30`)
+        return response.data;
+    }
+})
+
+
+export const currentUserQueryFm = selectorFamily({
+    key : "CurrentUserNameFm",
+    get : (idx:number)=>async ({get})=>{
+        const response =
+            await axios.get(
+                `https://jsonplaceholder.typicode.com/users/${idx}`)
         return response.data;
     }
 })

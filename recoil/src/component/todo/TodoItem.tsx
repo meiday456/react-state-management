@@ -1,6 +1,7 @@
 import {Todo} from "../../interface/TodoInterface";
 import {useRecoilState} from "recoil";
 import {todoListState} from "../../atom/Atoms";
+import React from "react";
 
 interface Props {
     item: Todo
@@ -44,7 +45,7 @@ const TodoItem = ({item}: Props) => {
     )
 }
 
-export default TodoItem
+export default React.memo(TodoItem)
 
 function replaceItemAtIndex(arr:Todo[], index:number, newValue:Todo) {
     return [...arr.slice(0, index), newValue, ...arr.slice(index + 1)];

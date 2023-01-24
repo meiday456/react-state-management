@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {RecoilRoot} from "recoil"
+import AppFm from "./AppFm";
 
 
 const root = ReactDOM.createRoot(
@@ -12,7 +13,8 @@ const root = ReactDOM.createRoot(
 root.render(
     <React.StrictMode>
         <RecoilRoot>
-            <App/>
+            {/*<App/>*/}
+            <AppFm/>
         </RecoilRoot>
     </React.StrictMode>
 );

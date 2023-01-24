@@ -45,7 +45,7 @@ export const todoListStatsState = selector({
 
 //get의 리턴 타입과 set의 콜백 파라미터의 값이 일치해야한다.
 export const numStateAddRandom = selector<number>({
-    key: "numStateOverZero",
+    key: "numStateAddRandom",
     get: ({get}) => { //필수 함수
         return get(numState) + (Math.random())
     },
