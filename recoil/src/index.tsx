@@ -13,8 +13,8 @@ const root = ReactDOM.createRoot(
 root.render(
     <React.StrictMode>
         <RecoilRoot>
-            {/*<App/>*/}
-            <AppFm/>
+            <App/>
+            {/*<AppFm/>*/}
         </RecoilRoot>
     </React.StrictMode>
 );

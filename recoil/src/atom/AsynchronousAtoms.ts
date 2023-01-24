@@ -18,9 +18,9 @@ export const currentUserQuery = selector({
 })
 
 
-export const currentUserQueryFm = selectorFamily({
+export const currentUserQueryFm = selectorFamily<any , number>({
     key : "CurrentUserNameFm",
-    get : (idx:number)=>async ({get})=>{
+    get : (idx)=>async ({get})=>{
         const response =
             await axios.get(
                 `https://jsonplaceholder.typicode.com/users/${idx}`)

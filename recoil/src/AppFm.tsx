@@ -1,8 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
-import CurrentUserInfo from "./component/CurrentUserInfo";
-import {currentUserIdState, currentUserQueryFm} from "./atom/AsynchronousAtoms";
-import {useRecoilValue, useSetRecoilState} from "recoil";
 import TodoListFm from "./component/todo/fm/TodoListFm";
 
 
