@@ -10,6 +10,9 @@ export const textState = atom({
         ({onSet})=>{ //logging
             onSet(str=>{
                 console.debug('current text ',str)
+                return ()=>{
+                    console.log('clean atom')
+                }
             })
         },
         ({onSet})=>{ // 로깅의 더 복잡한 예시에서는 변화의 히스토리를 유지할 수 있습니다

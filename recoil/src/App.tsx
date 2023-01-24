@@ -23,11 +23,11 @@ function App() {
 
     return (
         <div className="App">
-            {/*<TextInput></TextInput>*/}
-            {/*<CharacterCounter></CharacterCounter>*/}
+            <TextInput></TextInput>
+            <CharacterCounter></CharacterCounter>
             {/*  <TodoList></TodoList>*/}
             {/*  <hr/>*/}
-              <SelectorTest/>
+            {/*  <SelectorTest/>*/}
             {/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~₩*/}
             {/*promise resolve 되기전에 suspense로 먼저 출력할 것을 정의 할 수 있다.*/}
             {/*Suspense라는 React의 신기술을 사용하면 컴포넌트의 랜더링을
